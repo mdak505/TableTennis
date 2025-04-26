@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Ping Pong</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="menu">
+    <h1>Ping Pong Game</h1>
+    <p>Select Difficulty:</p>
+    <button onclick="startGame(1)">Beginner</button>
+    <button onclick="startGame(2)">Intermediate</button>
+    <button onclick="startGame(3)">Advanced</button>
+  </div>
+
+  <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+  <div id="gameOver">
+    <h2 id="winnerText"></h2>
+    <button onclick="restartGame()">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
